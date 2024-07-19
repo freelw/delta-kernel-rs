@@ -16,7 +16,7 @@ endif(WIN32)
 if(MSVC)
   target_compile_options(read_table PRIVATE /W4 /WX)
 else()
-  target_compile_options(read_table PRIVATE -Wall -Wextra -Wpedantic -Werror)
+  target_compile_options(read_table PRIVATE -Wall -Wextra -Wpedantic)
 endif()
 
 if(PRINT_DATA)
