@@ -17,4 +17,5 @@ cmake:					#: Use CMake to create a Makefile build system
 		$(USE_CCACHE) \
 		$(FORCE_COLOR) \
 		${EXTRA_CMAKE_FLAGS}
-
+clean:					#: Delete all build artifacts
+	rm -rf $(BUILD_BASE_DIR)
